@@ -1,0 +1,219 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#home">
+            <h1><span>M</span>ario <span>C</span>vitkovac</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#home" data-after="Home">Home</a></li>
+            <li><a href="#skills" data-after="Skills">Skills</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Glavna  -->
+  <section id="home">
+    <div class="home container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Mario <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- Glavna -->
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="skills container">
+      <div class="skill-top">
+        <h1 class="section-title">Ski<span>ll</span>s</h1>
+      </div>
+      <div class="skill-bottom">
+        <div class="skill-item">
+          <div class="icon"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/000000/external-javascript-is-a-high-level-interpreted-programming-language-logo-shadow-tal-revivo.png"/></div>
+          <p><br>I have experience with JavaScript but i want to gain much more experience in this field<br>
+             <br> Also experienced the use of JSON,SQL,OOP</br>
+             
+            </p>
+        </div>
+        <div class="skill-item">
+          <div class="icon"><img src="./img/c.svg"/></div>
+         
+          <p><br>Experience with the C language comes from high school later and from college</br>
+
+            <br>I also have some experience with the Python language</br>
+            <br>Technically understand how the principles from back to front and how api's work although i don't have much experience</br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1(for now <img src="./img/tear.png" style="width: 30px;height: 30px;"> )</h1>
+            <h2>My Portfolio</h2>
+            <p> Portfolio is made to make it easier to show the skills I have,
+               I think that actions speak louder than words. 
+               In the coming period, the site I worked for company should be operational in upcoming weeks
+              and therefore it will be a representative example</p>
+          </div>
+          <div class="project-img">
+            <img src="" id="image">
+            <script type="text/javascript">
+              let image = document.getElementById('image');
+              let images =['image1.jpg','image2.jpg','image3.jpg']
+              setInterval(function(){
+                let random =Math.floor(Math.random() *3);
+                image.src = images[random];
+              }, 1200);
+            </script>
+          </div>
+        </div>
+        <!--kad zatreba
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>naslov</h2>
+            <p>opis</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/b.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>naslov</h2>
+            <p>opis</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/b.jpg" alt="img">
+          </div>
+        </div>
+      -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/ja.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Trying To Be Full Stack Developer</h2>
+        <p>Hi,my first steps with computers was when i had 5 years.
+          From the famous Windows98 and PlayStation One i learned a lot of things.
+          <br>Soon i started repairing pc's hardware and reinstalling OS on various pc's,
+          so logicaly i moved forward and wanted more so i tried to make my own game.</br> Through various editors,
+          I managed to make maps for various games and game modes like warcraft3, but the road
+          took me to the other side. <br>At the age of 19, I started working on CNC machines,
+          I dedicated to that because of the financial situation at the time,
+          but even then I managed to connect CAD modeling with some kind of primitive programming.</br>
+          G code(cnc machine language) is my first language that I learned.Also i learned the principles of how processors
+          see our default code.<br> For now I'm a self-taught coder, I'm trying to call myself a programmer as soon as possible,
+          I hope we can progress together.</br></p>
+        <a href="./Cvitkovac CV.pdf" download class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2><a href="tel:+381 64 969 35 89">+381 64 969 35 89</a></h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2><a href="mailto:cvitkovacmario@gmail.com">cvitkovacmario@gmail.com</a></h2>
+            <h2><a href="mailto:cvitkovacmario93@gmail.com">cvitkovacmario93@gmail.com</a></h2>
+            
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Belgrade, Serbia</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>C</span>vitkovac <span>M</span>ario</h1>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/profile.php?id=100000539201603"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/cvitkovac.mario/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+      </div>
+      <p>Cvitkovac Mario, Thank you for you time</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
